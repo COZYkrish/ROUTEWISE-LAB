@@ -27,7 +27,7 @@ export default function Simulator() {
       <div className="absolute top-6 left-6 z-10 w-80 flex flex-col gap-4 max-h-[calc(100vh-120px)] overflow-y-auto overflow-x-hidden pointer-events-none" style={{ scrollbarWidth: 'none' }}>
         
         {/* Configuration Control Panel */}
-        <div className="bg-[#14141f]/80 backdrop-blur-xl border border-white/5 rounded-2xl p-5 shadow-2xl flex flex-col gap-6 transition-all pointer-events-auto shrink-0">
+        <div className="liquid-glass-strong rounded-2xl p-5 shadow-2xl flex flex-col gap-6 transition-all pointer-events-auto shrink-0 border border-white/10">
           <div>
             <h1 className="text-3xl font-extrabold tracking-tight bg-gradient-to-br from-[#00f3ff] via-[#3b82f6] to-[#b026ff] bg-clip-text text-transparent drop-shadow-sm">RouteWise</h1>
             <p className="text-[11px] uppercase tracking-widest text-gray-400 font-semibold mt-1">Logistics Intelligence</p>

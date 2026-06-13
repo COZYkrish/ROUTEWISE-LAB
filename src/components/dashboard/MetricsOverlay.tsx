@@ -11,7 +11,7 @@ export function MetricsOverlay({ side }: { side: 'primary' | 'secondary' }) {
   const label = isPrimary ? 'Primary Algorithm' : 'Secondary Algorithm';
 
   return (
-    <div className="bg-[#14141f]/80 backdrop-blur-xl border border-white/5 rounded-2xl p-4 flex flex-col gap-3 shadow-2xl pointer-events-auto">
+    <div className="liquid-glass-strong border border-white/10 rounded-2xl p-4 flex flex-col gap-3 shadow-2xl pointer-events-auto">
       <div className="flex justify-between items-center border-b border-white/10 pb-2">
         <span className={`text-xs font-bold uppercase tracking-widest ${colorClass}`}>{label}</span>
         {isPrimary && <span className="font-mono text-white text-[10px] bg-white/10 px-2 py-0.5 rounded-full">{status}</span>}

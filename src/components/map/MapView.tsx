@@ -85,7 +85,7 @@ const SelectionControls = () => {
   const { selectedWaypoints, clearWaypoints } = useTraversalStore();
   
   return (
-    <div className="absolute bottom-28 right-6 z-[1000] bg-[#14141f]/80 backdrop-blur-xl border border-white/5 rounded-2xl p-4 text-xs text-gray-400 font-mono shadow-2xl flex flex-col gap-2 w-64 pointer-events-auto">
+    <div className="absolute bottom-28 right-6 z-[1000] liquid-glass-strong border border-white/10 rounded-2xl p-4 text-xs text-gray-400 font-mono shadow-2xl flex flex-col gap-2 w-64 pointer-events-auto">
       <div className="text-center font-bold text-white mb-1 uppercase tracking-wider text-[10px]">Waypoints ({selectedWaypoints.length})</div>
       <div className="flex gap-2 text-[10px]">
         Tap anywhere on the road network to add or remove a stop.

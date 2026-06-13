@@ -11,7 +11,7 @@ export function HistoryScrubber() {
   const percentage = (currentEventIndex / Math.max(1, history.length - 1)) * 100;
 
   return (
-    <div className="bg-[#14141f]/80 backdrop-blur-2xl border border-white/5 rounded-2xl p-4 flex flex-col gap-3 shadow-2xl pointer-events-auto transition-all w-full relative group">
+    <div className="liquid-glass-strong border border-white/10 rounded-2xl p-4 flex flex-col gap-3 shadow-2xl pointer-events-auto transition-all w-full relative group">
       <div className="flex justify-between items-center px-1">
         <div className="flex items-center gap-3">
           <span className="text-xs font-bold text-gray-400 uppercase tracking-widest">Playback Timeline</span>
