@@ -12,18 +12,18 @@ const containerVariants = {
   }
 };
 
-const itemVariants = {
-  hidden: { opacity: 0, y: 30 },
-  visible: { 
-    opacity: 1, 
-    y: 0, 
-    transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] as const } 
-  }
-};
+// const itemVariants = {
+//   hidden: { opacity: 0, y: 30 },
+//   visible: { 
+//     opacity: 1, 
+//     y: 0, 
+//     transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] as const } 
+//   }
+// };
 
 export default function HeroSection() {
   return (
-    <motion.section 
+    <motion.section
       className="min-h-dvh w-full flex flex-col items-center justify-center relative px-6"
       variants={containerVariants}
       initial="hidden"
@@ -38,7 +38,7 @@ export default function HeroSection() {
       </motion.div>
 
       <motion.div variants={itemVariants} className="text-center max-w-4xl liquid-glass-strong rounded-[3rem] p-10 md:p-16 shadow-2xl border border-white/10 hover:border-white/20 transition-colors duration-500">
-        <motion.h1 
+        <motion.h1
           className="text-5xl md:text-7xl font-medium tracking-tight text-white mb-6 leading-tight drop-shadow-lg"
           variants={itemVariants}
         >
@@ -46,8 +46,8 @@ export default function HeroSection() {
           <span className="text-white/80">for a world that</span> <br />
           <i className="font-serif italic text-white">never stops moving.</i>
         </motion.h1>
-        
-        <motion.div 
+
+        <motion.div
           className="flex flex-wrap justify-center gap-3 md:gap-4 mt-8"
           variants={itemVariants}
         >
@@ -59,7 +59,7 @@ export default function HeroSection() {
         </motion.div>
       </motion.div>
 
-      <motion.div 
+      <motion.div
         className="absolute bottom-12 flex flex-col items-center gap-4 text-white/70"
         variants={itemVariants}
       >
